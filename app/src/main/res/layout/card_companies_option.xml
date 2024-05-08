@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <ImageButton
+            android:id="@+id/ib_company_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cars_logo_mercedes_benz"
+            android:background="@drawable/icon_bg_custom"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mercedes"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

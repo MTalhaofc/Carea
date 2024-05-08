@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_marginBottom="10dp"
+    tools:context=".activities.SpecialOffers">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+
+<!--      linear layout 1 for car special offers-->
+        <LinearLayout
+            android:id="@+id/ll_show_offer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_custom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="150dp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/discount_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20"
+                    android:textStyle="bold"
+                    android:textSize="33sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_week_deals1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/week_deals"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_deal_description1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount_description"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_deals_car_image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/car_1"
+                />
+
+        </LinearLayout>
+
+        <!--      linear layout 2 for car special offers-->
+        <LinearLayout
+            android:id="@+id/ll_show_offer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_custom"
+            android:layout_margin="20dp"
+            android:layout_below="@id/ll_show_offer1"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/discount_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10%"
+                    android:textStyle="bold"
+                    android:textSize="33sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_week_deals2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Deals!"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_deal_description2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount_description"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_deals_car_image2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/car_2"
+                />
+
+        </LinearLayout>
+
+        <!--      linear layout 3 for car special offers-->
+
+        <LinearLayout
+            android:id="@+id/ll_show_offer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_custom"
+            android:layout_margin="20dp"
+            android:layout_below="@id/ll_show_offer2"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/discount_value3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30%"
+                    android:textStyle="bold"
+                    android:textSize="33sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_week_deals3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Arrivals!"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_deal_description3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount_description"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_deals_car_image3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/car_8"
+                />
+
+        </LinearLayout>
+
+        <!--      linear layout 4 for car special offers-->
+
+        <LinearLayout
+            android:id="@+id/ll_show_offer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_custom"
+            android:layout_margin="20dp"
+            android:layout_below="@id/ll_show_offer3"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/discount_value4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20"
+                    android:textStyle="bold"
+                    android:textSize="33sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_week_deals4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/week_deals"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_deal_description4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount_description"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_deals_car_image4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/car_5"
+                />
+
+        </LinearLayout>
+
+        <!--      linear layout 5 for car special offers-->
+
+        <LinearLayout
+            android:id="@+id/ll_show_offer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_custom"
+            android:layout_margin="20dp"
+            android:layout_below="@id/ll_show_offer4"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/discount_value5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20"
+                    android:textStyle="bold"
+                    android:textSize="33sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_week_deals5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/week_deals"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_deal_description5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount_description"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_deals_car_image5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/car_5"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

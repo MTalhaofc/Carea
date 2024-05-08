@@ -1,0 +1,17 @@
+<!-- rounded_and_selector_bg.xml -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@android:color/white" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" />
+            <corners android:radius="40dp" />
+        </shape>
+
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="40dp" />
+        </shape>
+    </item>
+</selector>

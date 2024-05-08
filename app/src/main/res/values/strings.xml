@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="search">Search</string>
+    <string name="special_offers">Special Offer\n</string>
+    <string name="see_all">See All</string>
+    <string name="_20">20%</string>
+    <string name="week_deals">Week Deals!</string>
+    <string name="discount_description">Get a new car discount,\nonly valid this week</string>
+    <string name="mercedes">Mercedes</string>
+    <string name="tesla">Tesla</string>
+    <string name="bmw">BMW\n</string>
+    <string name="toyota">Toyota</string>
+    <string name="volvo">Volvo</string>
+    <string name="bugatti">Bugatti</string>
+    <string name="honda">Honda</string>
+    <string name="more">More</string>
+    <string name="top_deal">Top Deals</string>
+    <string name="all">All</string>
+    <string name="bmw_m4_series">BMW M4 Series</string>
+    <string name="_4_5">"4.5  | "</string>
+    <string name="new1">New</string>
+    <string name="_155_000">155,000</string>
+    <string name="app_name">Carea\n</string>
+    <string name="create_your_new_password">Create Your New Password</string>
+    <string name="password">Password\n</string>
+    <string name="re_enter_password">Re Enter Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="bt_continue">Continue</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="alert_message">Your account is ready to use. You will \nbe redirected to the Home page in a \nfew seconds..</string>
+    <string name="assalamualaikum">Assalamualaikum</string>
+    <string name="hunzla_shafiq">Hunzla Shafiq</string>
+    <string name="hello_blank_fragment">hello blank fragment</string>
+    <!--    <string name="home">Home</string>-->
+    <string name="orders">Orders</string>
+    <string name="inbox">Inbox</string>
+    <!--    <string name="wallet">Wallet</string>-->
+    <string name="profile">Profile</string>
+
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="remmember_me">Remmember Me</string>
+    <string name="login">Login</string>
+    <string name="forgot_the_password">Forgot the password?</string>
+    <string name="or_login_with">or login with</string>
+    <string name="or_continue_with">or continue with</string>
+    <string name="full_name">Full Name</string>
+    <string name="nickname">Nickname</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="add_a_pin_number_to_make_sure_your_account_stay_more_secure">add a pin number to make sure your account \nstay more secure</string>
+    <string name="add_a_fingerprint_to_make_your_account_more_secure">Add a fingerprint to make your account \nmore secure</string>
+    <string name="please_put_your_finger_on_fingerprint_scanner_to_get_started">Please put your finger on fingerprint \nscanner to get started</string>
+    <string name="continue_">Continue</string>
+    <string name="skip">Skip</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+
+    <string name="continue_with_google">Continue with google</string>
+    <string name="continue_with_facebook">Continue with facebook</string>
+    <string name="continue_with_apple">Continue with apple</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="signup">Sign Up</string>
+    <string name="dont_have_an_account">Dont have an account?</string>
+
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_orders">Orders</string>
+    <string name="bottom_nav_inbox">Inbox</string>
+    <string name="bottom_nav_wallet">Wallet</string>
+    <string name="bottom_nav_profile">Profile</string>
+    <string name="title_activity_orders">orders</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!--    <string name="app_name">LabAssignment</string>-->
+    <string name="offer_text">Your Offer is being processed</string>
+    <string name="make_offer_text">Please check notification periodically to see if your offer was acceptedor rejected by the seller</string>
+    <string name="back_text">Back to Home</string>
+    <string name="rejected_text">We are sorry, your offer has been rejected</string>
+    <string name="worry_text">Dont worry, you will always be able to make another offer that is more suitable, so that your offer is accepted</string>
+    <string name="offer_again">Make an Offer Again</string>
+    <string name="offer_accepted">Your offer has been accepted by the seller for $170,000</string>
+    <string name="Procced">Procced to Checkout</string>
+    <string name="Congrats">Congrats! Your offer has been accepted!</string>
+    <string name="Shipping">Shipping Address</string>
+    <string name="todo">TODO</string>
+    <string name="product_name">Product Name</string>
+    <string name="distance">1.3 KM</string>
+    <string name="rating">4.4</string>
+    <string name="price">Rs. 1000</string>
+    <string name="favourite">Favourite</string>
+    <string name="Order">Order</string>
+    <string name="car_names">BMW M5 Series</string>
+    <string name="car_color">Silver</string>
+    <string name="amount">$170,000</string>
+    <string name="choose_shipping">Choose Shipping </string>
+    <string name="choose">Choose Shipping Type </string>
+    <string name="amounts">Amount</string>
+    <string name="Shippings">Shipping</string>
+    <string name="Shippings_amount">-</string>
+    <string name="Tax">Tax</string>
+    <string name="Tax_amount">$1000</string>
+    <string name="Total">Total</string>
+    <string name="Total_amount">-</string>
+    <string name="home">Home</string>
+    <string name="office">Office</string>
+    <string name="office_address">6993 Meadow Valley Terra PC 3637</string>
+    <string name="apartment">Apartment</string>
+    <string name="apartment_address">21833 Clyde Gallagher, PC 4662</string>
+    <string name="house">Parent House</string>
+    <string name="house_address">5259 Blue Bill Park, PC 4627</string>
+    <string name="new_address">Add New Address</string>
+    <string name="choose_shipping_address">Choose Shipping</string>
+
+    <string name="truck">Truck</string>
+    <string name="truck_text">$200</string>
+    <string name="truck_address">Est. Arrival, Dec 20-23</string>
+
+    <string name="train">Train</string>
+    <string name="train_text">$250</string>
+    <string name="train_address">Est. Arrival, Dec 20-22</string>
+
+    <string name="container">Container Ship</string>
+    <string name="container_text">$300</string>
+    <string name="container_address">Est. Arrival, Dec 19-20</string>
+
+    <string name="Plane">Plane</string>
+    <string name="Plane_text">$400</string>
+    <string name="Plane_address">Est. Arrival, Dec 18-19</string>
+
+
+    <string name="amount_ship">$250</string>
+    <string name="amount_total">$171,250</string>
+    <string name="total_amount">$Total Amount</string>
+
+    <string name="payment">Select the payment method you want to use</string>
+    <string name="wallet">My Wallet</string>
+    <string name="wallet_amount">$299,677</string>
+    <string name="paypal">PayPal</string>
+    <string name="google">Google</string>
+    <string name="Apple">Apple Pay</string>
+    <string name="master">.... .... .... .... 4679</string>
+    <string name="select_wallet">Select Wallet</string>
+    <string name="review">change</string>
+    <string name="review_summary">Review</string>
+    <string name="pin">Enter your PIN to confirm payment</string>
+    <string name="pin_continue">Continue</string>
+
+
+</resources>

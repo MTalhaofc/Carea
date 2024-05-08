@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Carea"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.PinScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ReviewScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Payment"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CheckoutScreenAgain"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChooseShipping"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Shipping"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CheckoutScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OfferAccepted"
+            android:exported="false" />
+        <activity
+            android:name=".activities.YourOffer"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OfferScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ClockScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Makeoffer"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CompanyChatScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CarPage"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SearchResult"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotFound"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RecentSearch"
+            android:exported="false" />
+        <activity
+            android:name=".activities.GetStartedScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LetsYouInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ConfirmPin2"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TrackOrder"
+            android:exported="false" />
+        <activity
+            android:name=".activities.InboxActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.carea.activities.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.task.login"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.FingerPrint"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.ConfirmPin"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.Profile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.task.ForgetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgetPasswordPin"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TopDeals"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SpecialOffers"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FavouriteCars"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Home"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CreateNewPassword"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Home">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:id="@+id/frame_layout_container"
+        android:layout_marginTop="100dp"
+
+        >
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/white"
+            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior">
+            >
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/white"
+                android:id="@+id/bottom_app_bar"
+
+
+                >
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:menu="@menu/bottom_navigation_menu"
+                    app:labelVisibilityMode="labeled"
+                    android:background="@color/white"
+                    app:elevation="0dp"
+                    app:itemBackground="@android:color/transparent"
+
+
+
+                    />
+
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Search Bar -->
+
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbar_bg"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+
+            />
+
+    </LinearLayout>
+
+    <!-- Recent Search History -->
+    <LinearLayout
+        android:id="@+id/recentSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchLayout"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <!-- Recent Search Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results for"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/nextpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 found"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="210dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recentSearchLayout"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@drawable/clipboard" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Sorry the keyword entered cannot be found.Please cheak again"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.050000012" android:layout_marginLeft="10dp"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

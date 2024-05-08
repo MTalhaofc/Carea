@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_back_call"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/btn_back"
+        />
+
+    <ImageView
+        android:id="@+id/bmw_logo_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_logo_bmw"
+        android:foregroundGravity="center"
+        android:padding="100dp"
+        android:layout_marginBottom="150dp"
+        />
+    <TextView
+        android:id="@+id/tv_bwm_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="BMW Store"
+        android:layout_below="@id/img_back_call"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+
+        />
+    <TextView
+        android:id="@+id/tv_time_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="01:25 minutes"
+        android:layout_below="@id/img_back_call"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        />
+
+    <ImageButton
+        android:layout_height="90dp"
+        android:layout_width="90dp"
+        android:src="@drawable/btn_cancel"
+        android:background="@drawable/call_screen_buttons"
+        android:layout_below="@id/img_back_call"
+        android:layout_gravity="top"
+        android:layout_marginTop="570dp"
+        android:layout_marginStart="50dp"
+        />
+    <ImageButton
+        android:layout_height="90dp"
+        android:layout_width="90dp"
+        android:src="@drawable/btn_cancel_call"
+        android:background="@drawable/call_screen_buttons"
+        android:layout_below="@id/img_back_call"
+        android:layout_gravity="top"
+        android:layout_marginTop="570dp"
+        android:layout_marginStart="160dp"
+        />
+    <ImageButton
+        android:layout_height="90dp"
+        android:layout_width="90dp"
+        android:src="@drawable/btn_vol_up"
+        android:background="@drawable/call_screen_buttons"
+        android:layout_below="@id/img_back_call"
+        android:layout_gravity="top"
+        android:layout_marginTop="570dp"
+        android:layout_marginStart="270dp"
+        />
+
+
+
+
+</RelativeLayout>

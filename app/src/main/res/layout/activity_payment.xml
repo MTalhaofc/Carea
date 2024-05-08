@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Payment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/payment"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/wallet"
+                />
+            <TextView
+                android:id="@+id/title"
+                android:layout_toEndOf="@id/icon"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <ImageView
+                android:id="@+id/edit_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/black_circle_fill"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="25dp"
+                android:width="70sp"
+                android:text="@string/wallet_amount"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    PayPal -->
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon_paypal"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/paypal"
+                />
+            <TextView
+                android:id="@+id/title_paypal"
+                android:layout_toEndOf="@id/icon_paypal"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paypal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <ImageView
+                android:id="@+id/edit_icon_paypal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!--    Google   -->
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon_google"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/google"
+                />
+            <TextView
+                android:id="@+id/title_google"
+                android:layout_toEndOf="@id/icon_google"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/google"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <ImageView
+                android:id="@+id/edit_icon_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    Apple -->
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon_apple"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/apple_logo"
+                />
+            <TextView
+                android:id="@+id/title_apple"
+                android:layout_toEndOf="@id/icon_apple"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Apple"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <ImageView
+                android:id="@+id/edit_icon_apple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    Master Card -->
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon_master"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/master_card"
+                />
+            <TextView
+                android:id="@+id/title_master"
+                android:layout_toEndOf="@id/icon_master"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/master"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <ImageView
+                android:id="@+id/edit_icon_master"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_wallet"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#101010"
+        />
+
+
+</LinearLayout>

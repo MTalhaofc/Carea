@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.Notifications">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp"
+        >
+
+<!--today notifications-->
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_marginTop="110dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_notification1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_today"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/et_custom"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/ib_notification1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_custom_icon_notifiacton"
+                android:src="@drawable/notification_icon1"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp"
+                >
+                <TextView
+                    android:id="@+id/tv_notification1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your offer has been accepted!"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_notification_message1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Congrats! Your offer has been accepted by the seller for $170,000"
+                    android:textSize="15sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/bt_top_deal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:background="@drawable/custom_shape_btn"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+<!--        yesterday notifications-->
+        <TextView
+            android:id="@+id/tv_yesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yesterday"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@id/ll_notification1"
+            android:layout_marginTop="30dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_notification2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_yesterday"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/et_custom"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/ib_notification2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_custom_icon_notifiacton"
+                android:src="@drawable/notification_icon2"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp"
+                >
+                <TextView
+                    android:id="@+id/tv_notification2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Services Available!"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_notification_message2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Now you can track orders in real time"
+                    android:textSize="15sp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_notification3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_notification2"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/et_custom"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/ib_notification3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_custom_icon_notifiacton"
+                android:src="@drawable/notification_icon3"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp"
+                >
+                <TextView
+                    android:id="@+id/tv_notification3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your offer has been rejected!"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_notification_message3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="We’re sorry, your offer has been rejected by the seller :("
+                    android:textSize="15sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/bt_top_deal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:background="@drawable/custom_shape_btn"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_notification4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_notification3"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/et_custom"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/ib_notification4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_custom_icon_notifiacton"
+                android:src="@drawable/notification_icon1"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp"
+                >
+                <TextView
+                    android:id="@+id/tv_notification4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card Connected!"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_notification_message4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Credit Card has been linked!"
+                    android:textSize="15sp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_22_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="December 22, 2024"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@id/ll_notification4"
+            android:layout_marginTop="30dp"
+            />
+
+       <LinearLayout
+        android:id="@+id/ll_notification6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_22_date"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_custom"
+        android:padding="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_notification6"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_custom_icon_notifiacton"
+            android:src="@drawable/notification_icon3"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            >
+            <TextView
+                android:id="@+id/tv_notification6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Setup Successful!"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_notification_message6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Congrats, your account has been created."
+                android:textSize="15sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/bt_top_deal6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Details"
+                android:background="@drawable/custom_shape_btn"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="15dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+        
+    </RelativeLayout>
+
+</ScrollView>

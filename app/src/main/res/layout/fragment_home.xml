@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Edit text for search -->
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/search"
+                android:drawableStart="@drawable/icon_search"
+                android:drawableEnd="@drawable/icon_bullet_list"
+                android:background="@drawable/et_custom"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:paddingHorizontal="10dp"
+                android:drawablePadding="10dp"
+                android:autofillHints=""
+                android:focusableInTouchMode="true"
+                android:cursorVisible="false"
+                android:focusable="false"
+                />
+
+
+            <!-- Relative for show text special offer and see all -->
+            <RelativeLayout
+                android:id="@+id/rl_special_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_search"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+
+
+                >
+                <TextView
+                    android:id="@+id/tv_special_deal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/special_offers"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_see_all2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_all"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/tv_special_deal"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="textEnd"
+                    />
+            </RelativeLayout>
+
+            <!-- Relative for show special offers -->
+
+            <LinearLayout
+                android:id="@+id/ll_show_offer"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/et_custom"
+                android:layout_margin="20dp"
+                android:layout_below="@id/rl_special_text"
+                android:weightSum="10"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="4"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/discount_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_20"
+                        android:textStyle="bold"
+                        android:textSize="33sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_week_deals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/week_deals"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_deal_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discount_description"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_deals_car_image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/car"
+                    android:layout_weight="6"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/grid_layout_car_companies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_show_offer"
+                app:columnCount="4"
+                app:rowCount="2"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib_company_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/icon_bg_custom"
+                        android:src="@drawable/cars_logo_mercedes_benz"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/mercedes"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib_company_logo2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/icon_bg_custom"
+                        android:src="@drawable/cars_logo_tesla"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_company_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/tesla"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib_company_logo3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/icon_bg_custom"
+                        android:src="@drawable/cars_logo_mercedes_benz"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_company_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/mercedes"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib_company_logo4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/icon_bg_custom"
+                        android:src="@drawable/cars_logo_mercedes_benz"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_company_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/mercedes"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+
+
+
+
+            <!-- Relative for show text Top Deals and see all -->
+            <RelativeLayout
+                android:id="@+id/rl_top_deal_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grid_layout_car_companies"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="horizontal"
+
+
+
+                >
+                <TextView
+                    android:id="@+id/tv_top_deal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/top_deal"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_see_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_all"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/tv_top_deal"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="textEnd"
+                    />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

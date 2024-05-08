@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TopDeals"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Relative for show text Top Deals and see all -->
+        <RelativeLayout
+            android:id="@+id/rl_top_deal_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal"
+
+
+
+            >
+            <TextView
+                android:id="@+id/tv_top_deal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/top_deal"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_see_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_all"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toEndOf="@id/tv_top_deal"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="textEnd"
+                />
+        </RelativeLayout>
+
+
+        <!--            scrollview from deal -->
+        <HorizontalScrollView
+            android:id="@+id/top_deal_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_top_deal_text"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+
+                >
+
+                <Button
+
+                    android:id="@+id/bt_top_deal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all"
+                    android:backgroundTint="@color/primary"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/bt_top_deal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mercedes"
+                    android:background="@drawable/custom_shape_btn"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingHorizontal="7dp"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/bt_top_deal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tesla"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_shape_btn"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/bt_top_deal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toyota"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_shape_btn"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/bt_top_deal5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/volvo"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_shape_btn"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/bt_top_deal6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/honda"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_shape_btn"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+        <!--            top deals cars-->
+        <LinearLayout
+            android:id="@+id/ll_top_deal_Cars1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/top_deal_scroll"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/top_deal_cars1"
+                        android:layout_width="230dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/car_1"
+                        android:background="@drawable/custom_bg_top_deal"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_heart_favourite"
+                        android:layout_toEndOf="@id/top_deal_cars1"
+                        android:layout_marginStart="-50dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmw_m4_series"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_rating"
+                        android:layout_marginEnd="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_4_5"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:text="@string/new1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_bg_top_deal"
+                        android:padding="2dp"
+                        android:paddingStart="8dp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_155_000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/top_deal_cars2"
+                        android:layout_width="230dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/car_2"
+                        android:background="@drawable/custom_bg_top_deal"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_heart_favourite"
+                        android:layout_toEndOf="@id/top_deal_cars2"
+                        android:layout_marginStart="-50dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camara Sports"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_rating"
+                        android:layout_marginEnd="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.7  |"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:text="@string/new1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_bg_top_deal"
+                        android:padding="2dp"
+                        android:paddingStart="8dp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$170, 000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--            top deals cars-->
+        <LinearLayout
+            android:id="@+id/ll_top_deal_Cars2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/ll_top_deal_Cars1"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/top_deal_cars3"
+                        android:layout_width="230dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/car_3"
+                        android:background="@drawable/custom_bg_top_deal"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_heart_favourite"
+                        android:layout_toEndOf="@id/top_deal_cars3"
+                        android:layout_marginStart="-50dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmw_m4_series"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_rating"
+                        android:layout_marginEnd="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_4_5"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:text="@string/new1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_bg_top_deal"
+                        android:padding="2dp"
+                        android:paddingStart="8dp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal_price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_155_000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/top_deal_cars4"
+                        android:layout_width="230dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/car_4"
+                        android:background="@drawable/custom_bg_top_deal"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_heart_favourite"
+                        android:layout_toEndOf="@id/top_deal_cars4"
+                        android:layout_marginStart="-50dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camara Sports"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_rating"
+                        android:layout_marginEnd="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.7  |"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:text="@string/new1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_bg_top_deal"
+                        android:padding="2dp"
+                        android:paddingStart="8dp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal_price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$170, 000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--            top deals cars-->
+        <LinearLayout
+            android:id="@+id/ll_top_deal_Cars3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/ll_top_deal_Cars2"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/top_deal_cars6"
+                        android:layout_width="230dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/car_6"
+                        android:background="@drawable/custom_bg_top_deal"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_heart_favourite"
+                        android:layout_toEndOf="@id/top_deal_cars6"
+                        android:layout_marginStart="-50dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmw_m4_series"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_rating"
+                        android:layout_marginEnd="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_4_5"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:text="@string/new1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_bg_top_deal"
+                        android:padding="2dp"
+                        android:paddingStart="8dp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal_price6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_155_000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/top_deal_cars5"
+                        android:layout_width="230dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/car_5"
+                        android:background="@drawable/custom_bg_top_deal"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_heart_favourite"
+                        android:layout_toEndOf="@id/top_deal_cars5"
+                        android:layout_marginStart="-50dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camara Sports"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_rating"
+                        android:layout_marginEnd="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.7  |"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:text="@string/new1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_bg_top_deal"
+                        android:padding="2dp"
+                        android:paddingStart="8dp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal_price5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$170, 000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--            top deals cars-->
+        <LinearLayout
+            android:id="@+id/ll_top_deal_Cars4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/ll_top_deal_Cars3"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/top_deal_cars7"
+                        android:layout_width="230dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/car_7"
+                        android:background="@drawable/custom_bg_top_deal"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_heart_favourite"
+                        android:layout_toEndOf="@id/top_deal_cars7"
+                        android:layout_marginStart="-50dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmw_m4_series"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_rating"
+                        android:layout_marginEnd="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_4_5"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:text="@string/new1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_bg_top_deal"
+                        android:padding="2dp"
+                        android:paddingStart="8dp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal_price7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_155_000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/top_deal_cars8"
+                        android:layout_width="230dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/car_8"
+                        android:background="@drawable/custom_bg_top_deal"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_heart_favourite"
+                        android:layout_toEndOf="@id/top_deal_cars8"
+                        android:layout_marginStart="-50dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camara Sports"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_rating"
+                        android:layout_marginEnd="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.7  |"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:text="@string/new1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/custom_bg_top_deal"
+                        android:padding="2dp"
+                        android:paddingStart="8dp"
+
+
+                        />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_top_deal_price8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$170, 000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

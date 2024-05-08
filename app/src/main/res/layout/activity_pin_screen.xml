@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PinScreen"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pin"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="8dp">
+
+        <ImageView
+
+            android:layout_width="94dp"
+            android:layout_height="84dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/blackcirclefill"
+            android:background="@drawable/circle_shape"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+
+            android:layout_width="94dp"
+            android:layout_height="84dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/blackcirclefill"
+            android:background="@drawable/circle_shape"
+            android:contentDescription="@string/todo" />
+        <ImageView
+
+            android:layout_width="94dp"
+            android:layout_height="84dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/blackcirclefill"
+            android:background="@drawable/circle_shape"
+            android:contentDescription="@string/todo" />
+
+
+        <TextView
+
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_shape"
+            android:text="9"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_continue"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#101010"
+        />
+
+</LinearLayout>

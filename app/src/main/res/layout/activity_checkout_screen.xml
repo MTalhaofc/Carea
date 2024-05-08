@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CheckoutScreen"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Shipping"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle"/>
+
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_location_on_24"
+
+
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_toEndOf="@id/icon"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_below="@id/title"
+                android:layout_toEndOf="@id/icon"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="61480 Sunbrook Park, PC 5679"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:id="@+id/edit_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_edit" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Order"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="20dp"
+        android:elevation="5dp"
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+
+                android:layout_width="94dp"
+                android:layout_height="84dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/car"
+                android:background="@drawable/circle_shape"
+                android:contentDescription="@string/todo" />
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="@string/car_names"
+                    />
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/delivery_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/car_color"/>
+                        <TextView
+                            android:layout_toEndOf="@+id/delivery_icon"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="@string/car_color"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amount"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_shipping"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/truck"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/truck"/>
+
+
+
+
+
+            />
+
+            <TextView
+                android:id="@+id/shipping"
+                android:layout_toEndOf="@id/truck"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="205sp"
+            android:padding="16dp">
+
+            />
+
+            <TextView
+                android:id="@+id/Amount"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amounts"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/car_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:text="@string/amount"
+                />
+
+            <TextView
+                android:id="@+id/shippings"
+                android:layout_below="@+id/Amount"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Shippings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/ship_amount"
+                android:layout_below="@+id/car_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:text="@string/Shippings_amount"
+
+                android:layout_marginVertical="15dp"
+                />
+            <TextView
+                android:id="@+id/tax"
+                android:layout_below="@+id/shippings"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Tax"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/tax_amount"
+                android:layout_below="@+id/car_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="46dp"
+                android:text="@string/Tax_amount"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#E0E0E0"
+                android:layout_marginVertical="108dp"
+                android:layout_marginStart="12dp"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/Total"
+                android:layout_below="@+id/tax"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Total"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/Total_amount"
+                android:layout_below="@+id/tax_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:text="@string/Total_amount"
+                android:layout_marginVertical="35dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Total"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#101010"
+        />
+
+</LinearLayout>
+
+
+

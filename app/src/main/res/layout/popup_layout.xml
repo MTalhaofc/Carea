@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+
+    android:background="@drawable/popup_background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tv_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+
+            />
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            card_view:cardElevation="20dp"
+            card_view:cardCornerRadius="4dp"
+            android:layout_below="@+id/tv_review"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/placeholder"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BMW M5 Series"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Silver In Delivery"
+                            android:textSize="15sp"
+                            android:layout_marginEnd="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Comleted"
+                            android:paddingHorizontal="10dp"
+                            android:textSize="15sp"
+                            android:background="@drawable/tv_background"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$171,250"
+                            android:textSize="18sp"
+                            android:layout_marginEnd="40dp"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How is your car?"
+            android:layout_below="@id/card_view"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/instructionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please give your rating also your review..."
+            android:layout_below="@id/questionTextView"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3"
+            android:stepSize="1"
+            android:numStars="5"
+            android:layout_below="@id/instructionTextView"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/reviewEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your review"
+            android:text="Amazing car fast delivery! 🔥🔥"
+            android:layout_below="@id/ratingBar"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:background="@drawable/background"
+            android:layout_below="@id/reviewEditText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+
+            android:textColor="@color/white"
+            android:background="@drawable/background"
+
+            android:layout_below="@id/reviewEditText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

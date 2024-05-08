@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_arrow_back"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_bmw_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/img_back"
+        android:text="Bmw Store"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@id/tv_bmw_chat"
+        android:src="@drawable/ic_call" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@id/img_search"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bmw_chat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_recieved_msg"
+        android:padding="4dp"
+        android:text="Today"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_msg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bmw_chat"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/bg_recieved_msg"
+        android:padding="4dp" android:textSize="17sp"
+        android:text="Hello, welcome to BMW
+Official Store"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_msg_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_msg1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp" android:textSize="17sp"
+        android:background="@drawable/bg_recieved_msg"
+        android:padding="4dp"
+        android:text="Is there anything we can do
+to help you?"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_msg1_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_msg_2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+
+        android:padding="4dp"
+        android:text="Hi Good Morning, I want to
+buy a BMW M5 Series"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+
+    <EditText
+        android:id="@+id/input_msg"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_msg1_sent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="500dp" android:textSize="17sp"
+        android:background="@drawable/bg_recieved_msg"
+        android:hint="My previous BMW was too old |"
+        android:inputType="textLongMessage"
+        android:padding="3dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+
+        />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        android:layout_below="@id/tv_msg1_sent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="500dp"
+        android:layout_toEndOf="@id/input_msg"
+        android:background="@drawable/call_screen_buttons"
+        android:src="@drawable/img_mic" />
+</RelativeLayout>

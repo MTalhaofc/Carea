@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/alert_box_pin_screen"
+    android:layout_marginBottom="60dp">
+
+    <ImageView
+        android:id="@+id/img_wallet"
+        android:layout_width="140dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_wallet"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_successful"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_wallet"
+        android:gravity="center_horizontal"
+        android:text="Top Up Successful!"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_successful_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_successful"
+        android:gravity="center_horizontal"
+        android:text="You have successfully top up e-wallet for $100,000"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btn_view_e_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_successful_desc"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_black"
+        android:text="View E-receipt"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+
+        />
+    <Button
+        android:id="@+id/btn_cancel_e_reciept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_view_e_receipt"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_gray_cancel"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+
+        />
+
+</RelativeLayout>

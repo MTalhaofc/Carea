@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Shipping"
+    android:orientation="vertical">
+
+
+    <!--    Home   -->
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gray_circle_fill"/>
+
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_location_on_24"
+
+
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_toEndOf="@id/icon"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_below="@id/title"
+                android:layout_toEndOf="@id/icon"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="61480 Sunbrook Park, PC 5679"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:id="@+id/edit_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/black_circle_fill"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!--    Office   -->
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/circle_office"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gray_circle_fill"/>
+
+
+            <ImageView
+                android:id="@+id/icon_office"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_location_on_24"
+
+
+                />
+
+            <TextView
+                android:id="@+id/title_office"
+                android:layout_toEndOf="@id/icon_office"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/office"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/subtitle_office"
+                android:layout_below="@id/title_office"
+                android:layout_toEndOf="@id/icon_office"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/office_address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:id="@+id/edit_icon_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!--    Apartment  -->
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/circle_apartment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gray_circle_fill"/>
+
+
+            <ImageView
+                android:id="@+id/icon_apartment"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_location_on_24"
+
+
+                />
+
+            <TextView
+                android:id="@+id/title_apartment"
+                android:layout_toEndOf="@id/icon_apartment"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apartment"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/subtitle_apartment"
+                android:layout_below="@id/title_apartment"
+                android:layout_toEndOf="@id/icon_apartment"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apartment_address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:id="@+id/edit_icon_apartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!--   Parent House's   -->
+
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/circle_house"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gray_circle_fill"/>
+
+
+            <ImageView
+                android:id="@+id/icon_house"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_location_on_24"
+
+
+                />
+
+            <TextView
+                android:id="@+id/title_house"
+                android:layout_toEndOf="@id/icon_house"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/house"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/subtitle_house"
+                android:layout_below="@id/title_house"
+                android:layout_toEndOf="@id/icon_house"
+                android:layout_marginStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/house_address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:id="@+id/edit_icon_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/clip_path_group"
+
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_address"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#101010"
+        />
+
+
+
+
+
+</LinearLayout>

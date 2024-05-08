@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#101010</color>
+    <color name="icons_color">#212121</color>
+    <color name="et_color">#F7EEEE</color>
+
+    <color name="light_grey">#D5D5D5</color>
+    <color name="light_grey_2">#FDFDFD</color>
+    <color name="dark_grey">#A5A5A5</color>
+    <color name="dark_grey_2">#555555</color>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="red">#D30000</color>
+    <color name="blue">#081CBE</color>
+    <color name="green">#077B08</color>
+    <color name="yellow">#D7E117</color>
+    <color name="gray">#D9CFCF</color>
+
+</resources>
